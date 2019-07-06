@@ -8,7 +8,7 @@ VIDEODIR=/var/tmp/awsyoutubesync/videos
 VIDEONAME="%(channel)s - %(uploader)s - %(title)s.%(ext)s"
 # STOP EDITING HERE
 
-if [[ ~/.awsyoutubesync.env ]]; then
+if [[ -f ~/.awsyoutubesync.env ]]; then
     source ~/.awsyoutubesync.env
 fi
 
